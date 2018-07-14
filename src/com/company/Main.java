@@ -13,6 +13,14 @@ public class Main {
 	TelegramBotsApi api = new TelegramBotsApi();
         try {
             api.registerBot ( new footballLookBot());
+
+
+
+
+
+
+
+
         } catch (TelegramApiRequestException e) {
             e.printStackTrace();
         }
