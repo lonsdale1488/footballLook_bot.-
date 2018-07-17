@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/footballLook_bot.-.iml" filepath="$PROJECT_DIR$/footballLook_bot.-.iml" />
+      <module fileurl="file://$PROJECT_DIR$/telegrambotfootball.iml" filepath="$PROJECT_DIR$/telegrambotfootball.iml" />
     </modules>
   </component>
 </project>
