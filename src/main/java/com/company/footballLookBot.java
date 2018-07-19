@@ -16,36 +16,36 @@ import org.telegram.telegrambots.exceptions.TelegramApiException;
 
 public class footballLookBot   extends TelegramLongPollingBot {
     int marker =0;
-private static final  String APII = "579033849:AAFCphyesGthnergvyX0VmYvjwhxGI66-xc";
+private static final  String APII = "579033849:AAEJHJt1QHdfAkgXDn7ahHbJR5v-IbI3Jck";
 private static final   String footballLookBot = "BigGuru";
     private String db = "mongodb://java3:monkey3@ds241121.mlab.com:41121/heroku_sbfcgdq8";
     @Override
     public void onUpdateReceived(Update update) {
-        MongoClientURI mongoClientURI = new MongoClientURI(db);
-        MongoClient mongoClient = new MongoClient(mongoClientURI);
-        MongoDatabase database = mongoClient.getDatabase(mongoClientURI.getDatabase());
-        MongoCollection<Document> expecries = database.getCollection( "sergiyExpenses");
+//        MongoClientURI mongoClientURI = new MongoClientURI(db);
+//        MongoClient mongoClient = new MongoClient(mongoClientURI);
+//        MongoDatabase database = mongoClient.getDatabase(mongoClientURI.getDatabase());
+//        MongoCollection<Document> expecries = database.getCollection( "sergiyExpenses");
 
         String text = update.getMessage().getText();
         Long chaill = update.getMessage().getChatId();
         SendMessage sand = new SendMessage().setChatId(chaill);
+//
+//        if (text.equals("/start")) {
+//            sand.setText("Enter expenses");
+//        } else {
+//            Document document = new Document();
+//            document.append(Integer.toString(update.getMessage().getMessageId()), text);
+//            expecries.insertOne(document);
+//            sand.setText("Added");
+//        }
+//
+//        try {
+//            execute(sand);
+//        } catch (TelegramApiException e) {
+//            e.printStackTrace();
+//        }
 
-        if (text.equals("/start")) {
-            sand.setText("Enter expenses");
-        } else {
-            Document document = new Document();
-            document.append(Integer.toString(update.getMessage().getMessageId()), text);
-            expecries.insertOne(document);
-            sand.setText("Added");
-        }
 
-        try {
-            execute(sand);
-        } catch (TelegramApiException e) {
-            e.printStackTrace();
-        }
-
-        /**
         if (text.contains("привіт")) {
 
             sand.setText("Привіт");
@@ -83,7 +83,7 @@ private static final   String footballLookBot = "BigGuru";
             } catch (TelegramApiException e) {
                 e.printStackTrace();
             }
-         */
+
         }
 
     @Override
