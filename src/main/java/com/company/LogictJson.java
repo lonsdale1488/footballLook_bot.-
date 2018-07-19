@@ -2,6 +2,8 @@ package com.company;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
+import org.telegram.telegrambots.api.objects.replykeyboard.InlineKeyboardMarkup;
+import org.telegram.telegrambots.api.objects.replykeyboard.buttons.InlineKeyboardButton;
 
 import javax.net.ssl.HttpsURLConnection;
 import javax.net.ssl.SSLContext;
@@ -99,4 +101,5 @@ public class LogictJson {
         }
         return answer;
     }
+
 }
